@@ -1,9 +1,20 @@
-# Build and Deploy an Amazing 3D Developer Portfolio in React with Three.js
+<div align="center">
+  <br />
+    <a href="" target="_blank">
+      <img src="https://github.com/Tahsin005/tahsin005/blob/main/tahsin_github_cover_2.png" alt="Banner">
+    </a>
+  <br />
 
-![3D Website](https://i.ibb.co/ryytGVx/Screenshot-2023-11-25-at-11-28-11-AM.png)
+  <div>
+    <img src="https://img.shields.io/badge/Codeforces-F5F5DC?style=for-the-badge&logo=codeforces&logoColor=1F8ACB&labelColor=DC143C" alt="Codeforces badge"/>
+    <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef badge"/>
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode badge"/>
+  </div>
 
-### [🌟 Become a top 1% Next.js 14 developer in only one course](https://jsmastery.pro/next14)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
-### [📙 Free Three.js Cheatsheet](https://resource.jsmastery.pro/threejs-cheatsheet)
-### [🌐 Best Hosting for Your Websites](https://hostinger.com/javascript10)
+  <h3 align="center">MD. Tahsin Ferdous</h3>
+
+   <div align="center">
+     Competitive Programmer, ICPC Dhaka Regional Contestant - 2024, Full Stack Developer
+    </div>
+</div>
 
