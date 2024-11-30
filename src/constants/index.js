@@ -116,7 +116,7 @@ export const competitive = [
     rank: "Represented City University Bangladesh in the prestigious ICPC regional competition.",
     iconBg: "#ffffff",
     profileName: ' ICPC Dhaka Regional - 2024 ',
-    textColor: 'black-500',
+    textColor: '',
     date: "October 2024 - October 2024",
   },
   {
