@@ -137,7 +137,7 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 className={`text-${comp.textColor} text-xl font-poppins font-semibold`}>
+                  <h3 className={`text-xl font-poppins font-semibold`}>
                     {comp.title}
                   </h3>
                 </div>
