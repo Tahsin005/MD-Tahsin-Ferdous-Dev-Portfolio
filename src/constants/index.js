@@ -29,8 +29,14 @@ import {
     python,
     postgres,
     mysql,
-    django
+    django,
+    leetcode,
+    codechef,
+    codeforces,
+    icpc1,
+    icpc2,
 } from "../assets/icons";
+import { Example } from "@react-three/drei";
 
 export const skills = [
 
@@ -102,6 +108,45 @@ export const skills = [
         type: "Version Control",
     },
 ];
+
+export const competitive = [
+  {
+    title: "ICPC",
+    logo: icpc2,
+    rank: "Represented City University Bangladesh in the prestigious ICPC regional competition.",
+    iconBg: "#ffffff",
+    profileName: ' ICPC Dhaka Regional - 2024 ',
+    textColor: 'black-500',
+    date: "October 2024 - October 2024",
+  },
+  {
+    title: "Codeforces",
+    logo: codeforces,
+    rank: "Pupil",
+    iconBg: "#ffffff",
+    profileName: ' tahsin_ferdous ',
+    textColor: 'green-500',
+    date: "October 2024 - October 2024",
+  },
+  {
+    title: "Codechef",
+    logo: codechef,
+    rank: "3 Star",
+    iconBg: "#ffffff",
+    profileName: ' tahsinferdous3 ',
+    textColor: 'blue-600',
+    date: "October 2024 - October 2024",
+  },
+  {
+    title: "Leetcode",
+    logo: leetcode,
+    rank: "top 51.81%",
+    iconBg: "#ffffff",
+    profileName: ' MD_Tahsin_Ferdous ',
+    textColor: 'yellow-600',
+    date: "October 2024 - October 2024",
+  },
+]
 
 export const experiences = [
     {

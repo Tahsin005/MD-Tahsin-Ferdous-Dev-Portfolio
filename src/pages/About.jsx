@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences, skills, competitive } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -98,6 +98,57 @@ const About = () => {
                       {point}
                     </li>
                   ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
+      </div>
+
+      <div className='py-16'>
+        <h3 className='subhead-text'>Competitive Programming Milestones</h3>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+          <p>
+          From tackling coding challenges to participating in global competitions, here’s my story in numbers and ranks:
+          </p>
+        </div>
+
+        <div className='mt-12 flex'>
+          <VerticalTimeline>
+            {competitive.map((comp, index) => (
+              <VerticalTimelineElement
+                key={comp.title}
+                date={comp.profileName}
+                iconStyle={{ background: comp.iconBg }}
+                icon={
+                  <div className='flex justify-center items-center w-full h-full'>
+                    <img
+                      src={comp.logo}
+                      alt={comp.title}
+                      className='w-[60%] h-[60%] object-contain'
+                    />
+                  </div>
+                }
+                contentStyle={{
+                  borderBottom: "8px",
+                  borderStyle: "solid",
+                  borderBottomColor: comp.iconBg,
+                  boxShadow: "none",
+                }}
+              >
+                <div>
+                  <h3 className={`text-${comp.textColor} text-xl font-poppins font-semibold`}>
+                    {comp.title}
+                  </h3>
+                </div>
+
+                <ul className='my-5 list-disc ml-5 space-y-2'>
+                    <li
+                      key={`experience-point`}
+                      className='text-black-500 font-normal pl-1 text-lg'
+                    >
+                      {comp.rank}
+                    </li>
                 </ul>
               </VerticalTimelineElement>
             ))}

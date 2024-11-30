@@ -32,6 +32,11 @@ import python from './icons8-python.svg'
 import postgres from './icons8-postgresql.svg'
 import mysql from './icons8-mysql.svg'
 import django from './icons8-django.svg'
+import codeforces from './icons8-codeforces.-programming-competitions-and-contests,-programming-community.-24.png'
+import codechef from './icons8-codechef-50.png'
+import leetcode from './icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png'
+import icpc1 from './icpc1.png'
+import icpc2 from './icpc2.png'
 
 export {
     css,
@@ -68,4 +73,9 @@ export {
     postgres,
     mysql,
     django,
+    leetcode,
+    codechef,
+    codeforces,
+    icpc1,
+    icpc2,
 }
