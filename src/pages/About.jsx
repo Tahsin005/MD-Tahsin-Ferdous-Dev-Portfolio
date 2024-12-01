@@ -3,9 +3,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
+import resume from '../assets/resume/MD. Tahsin Ferdous Resume.pdf'
+
 import { CTA } from "../components";
 import { experiences, skills, competitive } from "../constants";
-
+import { FaFileDownload } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
@@ -22,22 +24,30 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-        A Computer Science and Engineering major, passionate about full-stack web development. Using Django for backend APIs and HTML, CSS, Tailwind CSS, JavaScript and React for frontend to build scalable web applications.
+          A Computer Science and Engineering major, passionate about full-stack web development. Using Django for backend APIs and HTML, CSS, Tailwind CSS, JavaScript and React for frontend to build scalable web applications.
         </p>
       </div>
+      <div className='mt-5 gap-3 flex text-slate-500'>
+        <button className="text-black-500 bg-white py-2 pe-2 ps-1 rounded-xl border-slate-500 flex gap-x-1">
+        <a href={resume} download='MD. Tahsin Ferdous Resume'>Download Resume!</a><FaFileDownload className="mt-1" />
+        </button>
+      </div>
 
-      <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+      <div className="py-10 flex flex-col">
+        <h3 className="subhead-text">My Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+            <div
+              className="w-20 h-20 hover:scale-150 transition-transform duration-300 ease-in-out"
+              key={skill.name}
+            >
+              <div className="btn-back rounded-xl" />
+              <div className="btn-front rounded-full flex justify-center items-center bg-white">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className="w-1/2 h-1/2 my-4 object-contain"
                 />
               </div>
             </div>
@@ -109,7 +119,7 @@ const About = () => {
         <h3 className='subhead-text'>Competitive Programming Milestones</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-          From tackling coding challenges to participating in global competitions, here’s my story in numbers and ranks:
+            From tackling coding challenges to participating in global competitions, here’s my story in numbers and ranks:
           </p>
         </div>
 
@@ -143,12 +153,12 @@ const About = () => {
                 </div>
 
                 <ul className='my-5 list-disc ml-5 space-y-2'>
-                    <li
-                      key={`experience-point`}
-                      className='text-black-500 font-normal pl-1 text-lg'
-                    >
-                      {comp.rank}
-                    </li>
+                  <li
+                    key={`experience-point`}
+                    className='text-black-500 font-normal pl-1 text-lg'
+                  >
+                    {comp.rank}
+                  </li>
                 </ul>
               </VerticalTimelineElement>
             ))}

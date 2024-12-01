@@ -20,7 +20,7 @@ const Projects = () => {
 
       <div className="flex flex-wrap my-20 gap-16">
   {projects.map((project) => (
-    <div className="lg:w-[400px] w-full" key={project.name}>
+    <div className="lg:w-[400px] w-full hover:scale-110 hover:shadow-slate-300 transition-transform duration-300 ease-in-out" key={project.name}>
       <div className="block-container relative w-full h-[250px] rounded-xl overflow-hidden">
         {/* Use the full size for images */}
         <img

@@ -179,7 +179,22 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/md-tahsin-ferdous/',
-    }
+    },
+    {
+        name: 'Codeforces',
+        iconUrl: codeforces,
+        link: 'https://codeforces.com/profile/tahsin_ferdous',
+    },
+    {
+        name: 'Codechef',
+        iconUrl: codechef,
+        link: 'https://www.codechef.com/users/tahsinferdous3',
+    },
+    {
+        name: 'Leetcode',
+        iconUrl: leetcode,
+        link: 'https://leetcode.com/u/user1674jI/',
+    },
 ];
 
 export const projects = [
