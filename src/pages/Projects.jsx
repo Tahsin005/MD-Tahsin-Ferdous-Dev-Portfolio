@@ -132,7 +132,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
                 >
-                  Read Blog
+                  Read more
                 </Link>
                 <img
                   src={arrow}
