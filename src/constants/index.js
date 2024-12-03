@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, lexaeon, daisyman, gourmet, recipefinder, liftedlisted, taskly, aroundtheflag } from "../assets/images";
+import { meta, shopify, starbucks, tesla, lexaeon, daisyman, gourmet, recipefinder, liftedlisted, taskly, aroundtheflag, blog1, blog2 } from "../assets/images";
 import {
     car,
     contact,
@@ -108,6 +108,25 @@ export const skills = [
         type: "Version Control",
     },
 ];
+
+export const blogs = [
+  {
+    title: 'DSA before Development or Development before DSA?',
+    image: blog1,
+    author: 'MD. Tahsin Ferdous',
+    publishDate: '09-07-2024',
+    description: `I was speaking to one of my developer friends the other day. Suddenly, a topic came up: The question that we discussed for a while was 'Should we learn Data Structures and Algorithms (DSA) first before jumping to development or the other way around?' I attempted to persuade him out of it explaining the importance of mastering DSA.....`,
+    blogLink: 'https://medium.com/@tahsin.ferdous3546/dsa-before-development-or-development-before-dsa-c2e7ec08fcc8'
+  },
+  {
+    title: 'Big O Notation and the Climb Over Constants.',
+    image: blog2,
+    author: 'MD. Tahsin Ferdous',
+    publishDate: '01-09-2024',
+    description: 'I was recently going through the implementations and complexities of common sorting algorithms such as Quicksort and Mergesort. I noticed that many programmers, including myself, often ignore the constant factors when calculating time complexity. This is typically acceptable for a high-level analysis, but there are situations where this oversight can lead to .....',
+    blogLink: 'https://medium.com/@tahsin.ferdous3546/big-o-notation-and-the-climb-over-constants-7b2b84272d07'
+  },
+]
 
 export const competitive = [
   {

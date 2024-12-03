@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // Import Framer Motion
 
 import { CTA } from "../components";
-import { projects } from "../constants";
+import { projects, blogs } from "../constants";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
@@ -10,6 +10,11 @@ const Projects = () => {
   const projectVariant = {
     hidden: { opacity: 0, y: 50 }, // Start hidden and slightly below
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Animate to visible
+  };
+
+  const blogVariant = {
+    hidden: { opacity: 0, scale: 0.9 }, // Start hidden and slightly scaled
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }, // Animate to visible
   };
 
   return (
@@ -71,6 +76,63 @@ const Projects = () => {
                   className="font-semibold text-blue-600"
                 >
                   Source Code
+                </Link>
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="w-4 h-4 object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      <div>
+        <h1 className="head-text">
+          My{" "}
+          <span className="blue-gradient_text drop-shadow font-semibold">
+            Blogs
+          </span>
+        </h1>
+      </div>
+
+      <p className="text-slate-500 mt-2 leading-relaxed">
+        Here are some of my blogs where I share insights, tutorials, and experiences in technology, programming, and more.
+      </p>
+
+      <div className="flex flex-wrap my-20 gap-16">
+        {blogs.map((blog, index) => (
+          <motion.div
+            key={blog.title}
+            className="lg:w-[400px] w-full hover:scale-105 hover:shadow-slate-300 transition-transform duration-300 ease-in-out"
+            initial="hidden" // Start hidden
+            whileInView="visible" // Animate when in view
+            viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% of the element is visible
+            variants={blogVariant} // Use the animation variant
+          >
+            <div className="block-container relative w-full h-[250px] rounded-xl overflow-hidden">
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="mt-5 flex flex-col">
+              <h4 className="text-2xl font-poppins font-semibold">
+                {blog.title}
+              </h4>
+              <p className="text-sm text-gray-400">{`By ${blog.author} | ${blog.publishDate}`}</p>
+              <p className="mt-2 text-slate-500">{blog.description}</p>
+              <div className="mt-5 flex items-center gap-2 font-poppins">
+                <Link
+                  to={blog.blogLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-600"
+                >
+                  Read Blog
                 </Link>
                 <img
                   src={arrow}
