@@ -11,6 +11,7 @@ import recipefinder from './recipefinder.png'
 import liftedlisted from './liftedlisted.png'
 import taskly from './taskly.png'
 import aroundtheflag from './aroundtheflag.png'
+import bazzarBuddy from './bazzarBuddy.png'
 import blog1 from './blog1.png'
 import blog2 from './blog2.png'
 
@@ -29,6 +30,7 @@ export {
     liftedlisted,
     taskly,
     aroundtheflag,
+    bazzarBuddy,
     blog1,
     blog2,
 }

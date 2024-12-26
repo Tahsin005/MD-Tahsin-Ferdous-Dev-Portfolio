@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, lexaeon, daisyman, gourmet, recipefinder, liftedlisted, taskly, aroundtheflag, blog1, blog2 } from "../assets/images";
+import { meta, shopify, starbucks, tesla, lexaeon, daisyman, gourmet, recipefinder, liftedlisted, taskly, aroundtheflag, blog1, blog2, bazzarBuddy } from "../assets/images";
 import {
     car,
     contact,
@@ -284,16 +284,16 @@ export const projects = [
       source_code_link: "https://github.com/Tahsin005/Recipe-App",
     },
     {
-      name: "Lifted & Listed",
+      name: "Bazzar Buddy",
       description:
-        "Lifted & Listed: Buy and sell easily. List, manage, edit, or delete items. Connect with buyers, track sales, and update your account. Secure email verification ensures safety.",
+        "Bazzar Buddy: Buy and sell easily. List, manage, edit, or delete items. Track your transactions, sales, and update your account. Secure email verification ensures safety.",
       tags: [
         {
-          name: "html",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "javascript",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
@@ -301,9 +301,9 @@ export const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: liftedlisted,
-      live_link: "https://lifted-and-listed.netlify.app/",
-      source_code_link: "https://github.com/Tahsin005/Lifted-Listed-Frontend",
+      image: bazzarBuddy,
+      live_link: "https://bazzar-buddy.vercel.app/",
+      source_code_link: "https://github.com/Tahsin005/BazzarBuddy",
     },
     {
       name: "Taskly",
