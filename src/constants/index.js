@@ -212,7 +212,7 @@ export const socialLinks = [
     {
         name: 'Leetcode',
         iconUrl: leetcode,
-        link: 'https://leetcode.com/u/user1674jI/',
+        link: 'https://leetcode.com/u/md-tahsin-ferdous/',
     },
 ];
 
